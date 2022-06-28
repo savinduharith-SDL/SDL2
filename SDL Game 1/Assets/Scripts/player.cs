@@ -17,7 +17,7 @@ public class player : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalalInput = Input.GetAxis("Vertical");
-        Vector3 v3 = new Vector3(horizontalInput * speed, 0f, verticalalInput * speed);
-        rbPlayer.AddForce(v3);
+        Vector3 v3 = new Vector3(horizontalInput , 0f, verticalalInput);
+        rbPlayer.AddForce(v3 * speed);
     }
 }
